@@ -1,4 +1,12 @@
 body{
     width: 100%;
-    text-align: center;
+}
+.headerMenu ul{
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+}
+.headerMenu li{
+    color: #ebe0e0;
 }
