@@ -1,12 +1,27 @@
 body{
     width: 100%;
+    margin: 0px;
+    padding-top: 0px;
 }
-.headerMenu ul{
+.headerMenu{
     list-style-type: none;
     position: fixed;
     width: 100%;
     background-color: #000000;
+    float: left;
+    margin: 0px;
+    padding: 0px;
 }
 .headerMenu li{
+    color: #ebe0e0;
+    float: left;
+    padding: 20px;
+}
+.headerMenu :hover{
+    background-color: #ebe0e0;
+    color: #000000;
+}
+.headerMenu a{
+    text-decoration: none;
     color: #ebe0e0;
 }
