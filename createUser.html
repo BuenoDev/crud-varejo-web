@@ -29,20 +29,36 @@
                     </div>
                   </nav>
     </header>
-    
-    <form class="form-inline">
-            <h2>Login</h2>
+    <form class="form-horizontal">
             <div class="form-group">
-              <label for="userName">Usuário:</label>
-              <input type="text" class="form-control" id="usrName">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
             </div>
             <div class="form-group">
-              <label for="pwd">Senha:</label>
-              <input type="password" class="form-control" id="pwd">
+                    <label class="control-label col-sm-2" for="email">Nome Completo:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Enter Name">
+                    </div>
+                </div>
+            <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Nome de Usuário:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Enter Username">
+                    </div>
+                  </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-sm-10"> 
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-            <br><br>
-            <a href="createUser.html">Ainda não tenho uma conta.</a>
+            <div class="form-group"> 
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Enviar</button>
+              </div>
+            </div>
           </form>
 </body>
 </html>
