@@ -1,0 +1,20 @@
+{
+    "name": "crud-varejo-web",
+    "description": "mini controle de varejo usando plataforma web",
+    "authors": [
+        {
+            "name": "Bruno Moura de Jesus",
+            "email": "contato@brunosite.com"
+        },
+        {
+            "name": "Nome",
+            "email": "email@email.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Varejo\\": "app/"
+        }
+    }
+}

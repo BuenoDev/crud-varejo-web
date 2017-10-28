@@ -1,7 +1,7 @@
 <?php
 /** Controle de rotas do ambiente  */
 
-namespace Controller\Controller;
+namespace Varejo\Controller;
 
 class Controller{
     
