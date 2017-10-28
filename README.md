@@ -7,16 +7,11 @@ html, css, javascript, php
 ## Conceitos de padrões usados
 
 O sistema é desenvolvido em padrões e conceitos mais recentes no qual abre um grande "leque" para upgrade desse sistema. Tais padrões e conceitos são:
-### SingleTon
-    Padrão...
-### MVC
-    Padrão...
-### Active Record
-    Padrão...
-### PSR-4
-    Padrão...
-### JSON
-    Padrão...
+
+* SingleTon
+* MVC
+* Active Record
+* PSR-4
 
 ## Como instalar
     git clone https://github.com/BuenoDev/crud-varejo-web
