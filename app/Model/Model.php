@@ -3,6 +3,8 @@
 
 namespace Varejo\Model;
 
-class Model{
-    
+use Varejo\Traits\ConnTrait;
+
+abstract class Model{
+    use ConnTrait;
 }

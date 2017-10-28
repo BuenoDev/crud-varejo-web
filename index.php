@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '\app\autoload.php';
 
-$conn = new Varejo\Conn\Conn;
+$control = new Varejo\Controller\Controller;
 
-var_dump($conn);
+var_dump($control);
