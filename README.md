@@ -6,12 +6,12 @@ html, css, javascript, php
 
 ## Conceitos de padrões usados
 
-O sistema é desenvolvido em padrões e concecitos mais recentes no qual abre um grande "leque" para upgrade desse sistema. Tais padrões e conceitos são:
+O sistema é desenvolvido em padrões e conceitos mais recentes no qual abre um grande "leque" para upgrade desse sistema. Tais padrões e conceitos são:
 ### SingleTon
     Padrão...
 ### MVC
     Padrão...
-### Stored Procedures
+### Active Record
     Padrão...
 ### PSR-4
     Padrão...
@@ -25,7 +25,7 @@ O sistema é desenvolvido em padrões e concecitos mais recentes no qual abre um
 
     composer update
 
-Vode pode usar wamp, camp, ou qualquer servidor local para executar. Pode também acionar um servidor local via console usando php na pasta do sistema.
+Vode pode usar wamp, xamp, ou qualquer servidor local para executar. Pode também acionar um servidor local via console usando php na pasta do sistema.
 
     php -S localhost:8000
 
