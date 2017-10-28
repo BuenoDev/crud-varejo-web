@@ -30,3 +30,4 @@ Vode pode usar wamp, camp, ou qualquer servidor local para executar. Pode també
     php -S localhost:8000
 
 Agora é só abrir o navegador e digitar -  'http://localhost:8000'
+
