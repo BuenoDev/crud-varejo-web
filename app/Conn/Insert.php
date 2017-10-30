@@ -19,13 +19,14 @@ class Insert extends Conn{
      * Iniciamos uma inserção de registro no banco de dados de acordo com a tabela e dados
      * @param $table string - nome da tabela
      * @param $data array - array de dados a serem inseridos ['coluna' => 'valor']
+     * @return boolean
      */
     public function execute($table, array $data){
         $this->table = (string) $table;
         $this->data = $data;
-
         $this->buildQuery();
         $this->finalize();
+        return $this->result() ? true : false;
     }
 
     /**
