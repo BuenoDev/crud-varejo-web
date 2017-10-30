@@ -14,7 +14,9 @@ abstract class Model{
 
     public function insert($data){
         $insert = new \Varejo\Conn\Insert;
-        return $insert->execute($this->table, $data);
+        if($insert->execute($this->table, $data)){
+            return $insert->result();
+        }
     }
 
     public function update($data, $clause){
