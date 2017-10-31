@@ -27,3 +27,4 @@ Pode também acionar um servidor local via console usando php na pasta do sistem
     php -S localhost:8000
 
 Agora é só abrir o navegador e digitar -  'http://localhost:8000'
+#
