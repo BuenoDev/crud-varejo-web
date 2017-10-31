@@ -15,25 +15,14 @@
         <title><?= $data['title']; ?> </title>
     </head>
     <body>
-
-    
         <header>
-                <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                          <div class="navbar-header">
-                            <a class="navbar-brand" href="#">Varejo Web</a>
-                          </div>
-                          <ul class="nav navbar-nav">
-                              <!-- Trocar class active para item ativo atual -->
-                            <li class="active"><a href="#">Login</a></li>
-                            <li><a href="#">Cadastro de Produtos</a></li>
-                            <li><a href="#">Consulta</a></li>
-                            <li><a href="">Venda</a></li>
-                            <li><a href="">Check-in</a></li>
-                          </ul>
-                        </div>
-                      </nav>
+        
+        @set(nav)
         </header>
 
+@session('section')
+        <footer>
+          
+        </footer>
     </body>
     </html>
