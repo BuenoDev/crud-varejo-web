@@ -6,7 +6,7 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <!-- CSS Personalizado -->
                 <link rel="stylesheet" href="css/master.css">
-                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="css/login.css">
                 <title>Varejo Login</title>
             </head>
 <body>
