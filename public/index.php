@@ -1,7 +1,9 @@
 <?php
 /** Boot do sistema. */
+
 require_once __DIR__ . '\..\app\autoload.php';
 
+$users = new Varejo\Model\User;
 
 $dados = [
     'name' => 'Joãozinho Pé de Chinelo',
@@ -10,12 +12,10 @@ $dados = [
     'role' => 'client'
 ];
 
+$users->update($dados, ['id', '=', '2']);
 
-dd($dados);
-
-
-// $users = new Varejo\Model\User;
 // $users->insert($dados);
 // if($users){
     
 // }
+
