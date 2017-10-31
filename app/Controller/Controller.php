@@ -12,9 +12,12 @@ class Controller{
         $this->post = filter_input_array(INPUT_POST, FILTER_DEFAULT);
     }
 
-    public function build(){
-        
+    public function get(){
+        return $this->get;
+    }
+    
+    public function post(){
+        return $this->post;
     }
 
-    
 }

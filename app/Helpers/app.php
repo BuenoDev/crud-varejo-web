@@ -2,6 +2,8 @@
 
 if(!function_exists('dd')){
     function dd(...$args){
-        var_dump($args);
+        echo "<pre>";
+            var_dump($args);
+        echo "</pre>";
     }
 }
