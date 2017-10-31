@@ -17,3 +17,15 @@ if(!function_exists('view')){
         return "ERROR: View {$view} não encontrada";
     }
 }
+
+if(!function_exists('errorDebug')){
+    function error_debug($error, $message){
+        if($error){
+            die($message . " - File: {$e->getFile()} <br> - Linha: {$e->getLine()}");
+        }else{
+            die($message);
+        }
+        
+    }
+}
+
