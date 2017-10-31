@@ -3,7 +3,7 @@
 
 namespace Varejo\Controller;
 
-class Controller{
+abstract class Controller{
     private $get;
     private $post;
 
@@ -12,12 +12,19 @@ class Controller{
         $this->post = filter_input_array(INPUT_POST, FILTER_DEFAULT);
     }
 
-    public function get(){
+    public function get($get = null){
+        if($get){
+            return $this->get[$get];
+        }
         return $this->get;
     }
     
-    public function post(){
+    public function post($post = null){
+        if($post){
+            return $this->get[$post];
+        }
         return $this->post;
     }
 
+    abstract public function show();
 }

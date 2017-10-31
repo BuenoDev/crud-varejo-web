@@ -1,2 +1,1 @@
-
-<title><?php echo $data['title']   ?></title>
+<h1>Página de contato</h1>
