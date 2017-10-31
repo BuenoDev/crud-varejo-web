@@ -1,1 +1,6 @@
-<h1>Página de contato</h1>
+@extends('layout/app')
+@include('nav','layout/nav')
+@session('section')
+
+
+@endsession()

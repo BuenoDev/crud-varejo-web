@@ -1,7 +1,19 @@
-.form-inline{
-    margin:  15%;
+.container{
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding: 10px;
 }
-.form-horizontal{
-    margin-right: 500px;
-    margin-left: 200px;
+.form{
+    display: block;
+}
+.form input{
+    width: 100%;
+    padding: 5px;
+}
+.form div{
+    padding: 10px;
+}
+.btn {
+    padding: 5px 15px;
+    cursor: pointer;
 }
