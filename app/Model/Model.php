@@ -3,10 +3,21 @@
 
 namespace Varejo\Model;
 
+use Varejo\Conn\Insert;
+use Varejo\Conn\Update;
+use Varejo\Conn\Select;
+use Varejo\Conn\Delete;
+
 abstract class Model{
 
+    private $insert;
+    private $update;
+    private $select;
+    private $delete;
+    
     protected $table;
     private $model;
+    
     
     public function query($query){
         
@@ -17,14 +28,14 @@ abstract class Model{
      * 
      */
     public function insert($data){
-        $insert = new \Varejo\Conn\Insert;
-        if($insert->execute($this->table, $data)){
+        $this->insert = new Insert;
+        if($this->insert->execute($this->table, $data)){
             return $insert->result();
         }
     }
 
     public function update(array $data, array $clauses){
-        $update = new \Varejo\Conn\Update();
+        $this->update = new Update;
         $where = "WHERE";
         $clause = null;
         if($clauses){
@@ -50,7 +61,7 @@ abstract class Model{
             $clause = "{$where} {$define}";
         }
         
-        $update->execute($this->table, $data, $clause, $query_string);
+        $this->update->execute($this->table, $data, $clause, $query_string);
     }
 
     public function delete($id){
