@@ -25,6 +25,4 @@ abstract class Controller{
         }
         return $this->post;
     }
-
-    abstract public function show();
 }

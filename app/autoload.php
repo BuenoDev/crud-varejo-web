@@ -4,6 +4,7 @@
 require_once __DIR__ . '\..\vendor\autoload.php';
 
 
-$route = new \Varejo\Services\RouteService;
+/** Carregamente de rotas do sistema */
+$route = new \Varejo\Services\Route;
 require_once __DIR__ . '\route.php';
 $route->execute();

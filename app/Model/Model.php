@@ -12,6 +12,10 @@ abstract class Model{
         
     }
 
+    /**
+     * Model insert registro no bnco dedados
+     * 
+     */
     public function insert($data){
         $insert = new \Varejo\Conn\Insert;
         if($insert->execute($this->table, $data)){

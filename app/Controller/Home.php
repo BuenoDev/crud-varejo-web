@@ -5,7 +5,7 @@ namespace Varejo\Controller;
 
 class Home extends Controller{
     
-    public function show(){
+    public function index(){
     
         return view('home');
     }
