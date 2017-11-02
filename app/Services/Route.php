@@ -7,11 +7,13 @@ class Route{
     private $uri;
     private $obj;
 
+
     /**
      * Construto da classe RouteService
      */
     public function __construct(){
         $this->uri = filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_DEFAULT);
+        // dd($this->uri);
     }
 
     /**
@@ -47,7 +49,8 @@ class Route{
      */
     private function verify(){
         if($this->isRouteExists()){
-            if(array_key_exists($this->uri, $this->input[$this->method()])){
+
+            if(isset($this->input[$this->method()]) && array_key_exists($this->uri, $this->input[$this->method()])){
                 $this->loadController();
             }else{
                 error_debug(null, "ERROR: Método de requisição <b>{$this->method()}</b> não permitido para esta rota!");

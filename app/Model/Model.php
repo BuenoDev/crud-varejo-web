@@ -14,7 +14,8 @@ abstract class Model{
     private $update;
     private $select;
     private $delete;
-    
+   
+    /** Nome da tabela */
     protected $table;
     private $model;
     
@@ -34,6 +35,10 @@ abstract class Model{
         }
     }
 
+    /**
+     * @param array $data - Dados de atualizações com seus respectivos campos e novos valores
+     * @param array $clauses - Cláusula ou regra para atualização de registros
+     */
     public function update(array $data, array $clauses){
         $this->update = new Update;
         $where = "WHERE";
@@ -64,11 +69,19 @@ abstract class Model{
         $this->update->execute($this->table, $data, $clause, $query_string);
     }
 
+    /**
+     * Deletar registro de uma tabela pelo id
+     * @param int $id
+     */
     public function delete($id){
         
     }
 
-    public function select($fields){
+    /**
+     * Seleção de campos para leitura do SQL
+     * @param $fields - campos da tabela
+     */
+    public function select(...$fields){
         return $this;
     }
 
@@ -78,6 +91,9 @@ abstract class Model{
 
     }
 
+    /**
+     * @param int $id
+     */
     public function find($id){
         
     } 

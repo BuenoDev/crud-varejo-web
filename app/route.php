@@ -1,4 +1,4 @@
 <?php
 
 $route->get('/', 'Home@index');
-$route->post('/contato', 'Contato@show');
+$route->post('/login/auth', 'Login@auth');
