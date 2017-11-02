@@ -3,29 +3,24 @@
 namespace Varejo\Conn;
 
 abstract class Conn{
-    private static $host = "localhost";
-    private static $port = "3307";    
-    private static $dbsa = "varejo_web";
-    private static $user = "root";
-    private static $pass = "";
-
     private static $conection = null;
     
     /**
      * Executa a inicialização da conexão com o banco de dados
      */
     public static function Conn(){
+        require_once __DIR__ . '\..\..\config.php';
         try{
             if(self::$conection == null){ // Verifica se já há conexão ativa
 
                 // string padrão de opções para conexão com mysql
-                $dsn = "mysql:host=" . self::$host . ";port=" . self::$port . ";dbname=" . self::$dbsa;
+                $dsn = "mysql:host=" . $connection['host'] . ";port=" . $connection['port'] . ";dbname=" . $connection['dbsa'];
 
                 // definição de opção de tipo de caracter inserido no banco de dados
                 $options = [\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8']; 
 
                 // Armazena no atributo uma instancia PDO de conexão
-                self::$conection = new \PDO($dsn, self::$user, self::$pass, $options);
+                self::$conection = new \PDO($dsn, $connection['user'], $connection['pass'], $options);
             }
         } catch (\PDOException $e){
             // Caso haja falha na conxão, exibe o erro.

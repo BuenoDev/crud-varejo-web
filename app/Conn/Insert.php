@@ -6,8 +6,17 @@ namespace Varejo\Conn;
 
 class Insert extends Conn{
     private $table;
+
+    /**
+     * [
+     *  'coluna' => 'valor',
+     *  'coluna' => 'valor'
+     * ]
+     */
     private $data;
+
     private $result;
+    
     private $query;
 
     private $insert;
