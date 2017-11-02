@@ -16,18 +16,25 @@
         }
         .flex-center{
             align-items: center;
-            display: flex;
+            display: block;
             justify-content: center;
             height: 100vh;
+            text-align: center;
+            padding-top: 150px;
+            box-sizing: border-box;
         }
         .error-code{
             font-size: 5em;
+        }
+        h2{
+            font-size: 1.63em;
         }
     </style>
 </head>
 <body>
     <div class="flex-center">
-        <h1><span class="error-code">404</span><br> página não encontrada</h1>
+        <h1><span class="error-code">404</span></h1>
+        <h2>página não encontrada</h2>
     </div>
     
 </body>

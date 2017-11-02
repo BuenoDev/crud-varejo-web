@@ -13,7 +13,6 @@ class Route{
      */
     public function __construct(){
         $this->uri = filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_DEFAULT);
-        // dd($this->uri);
     }
 
     /**
@@ -49,7 +48,7 @@ class Route{
      */
     private function verify(){
         if($this->isRouteExists()){
-
+            
             if(isset($this->input[$this->method()]) && array_key_exists($this->uri, $this->input[$this->method()])){
                 $this->loadController();
             }else{
@@ -87,7 +86,7 @@ class Route{
     }
 
     /**
-     * Retorna o tipo do método no qual está sendo feita
+     * Retorna o tipo do método requisitado (POST, GET etc)
      * @return string
      */
     private function method(){

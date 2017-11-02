@@ -32,11 +32,11 @@ if(!function_exists('view')){
 if(!function_exists('errorDebug')){
     function error_debug($error, $message){
         if($error){
-            die($message . " - File: {$e->getFile()} <br> - Linha: {$e->getLine()}");
+            die($message . " - File: {$error->getFile()} <br> - Linha: {$error->getLine()}");
         }else{
             die($message);
         }
-        
+
     }
 }
 
