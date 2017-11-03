@@ -1,10 +1,10 @@
 <?php
 /** Arquivo de inicialização de classes de forma automáticas já pré carregadas na memória */
 
-require_once __DIR__ . '\..\vendor\autoload.php';
+require __DIR__ . '\..\vendor\autoload.php';
 
 
 /** Carregamente de rotas do sistema */
 $route = new \Varejo\Services\Route;
-require_once __DIR__ . '\..\app\route.php';
+require __DIR__ . '\..\app\route.php';
 $route->execute();

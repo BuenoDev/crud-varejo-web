@@ -15,4 +15,8 @@ class Test extends Controller{
         $insert->execute('users', $dados);
 
     }
+
+    public function dynamic(){
+        
+    }
 }

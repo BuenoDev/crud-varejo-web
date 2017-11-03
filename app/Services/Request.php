@@ -2,6 +2,6 @@
 
 namespace Varejo\Services;
 
-class Route{
+class Requst{
     
 }

@@ -9,7 +9,7 @@ abstract class Conn{
      * Executa a inicialização da conexão com o banco de dados
      */
     public static function Conn(){
-        require_once __DIR__ . '\..\..\config.php';
+        require __DIR__ . '\..\..\config.php';
         try{
             if(self::$conection == null){ // Verifica se já há conexão ativa
 

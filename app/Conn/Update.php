@@ -22,7 +22,7 @@ class Update extends Conn{
         $this->data = $data;
         $this->clause = (string) $clause;
 
-        $this->buildQwuery();
+        $this->buildQuery();
     }
 
     public function result(){
@@ -32,7 +32,7 @@ class Update extends Conn{
     public function countUpdated(){
 
     }
-    public function buildQwuery(){
+    public function buildQuery(){
         $data = [];
         foreach($this->data as $key => $value){
             $data[] = $key . ' = ' . $value;
@@ -40,7 +40,15 @@ class Update extends Conn{
         $set = implde(', ', $data);
 
         dd($set);
-        /** UPDATE table_name SET col1 = val1, col2 = val2 WHERE field = value */
+
+        /** Padrão SQL
+         * UPDATE table_name SET col1 = val1, col2 = val2 WHERE field = value 
+         */
+        
+        /** 
+         * Padrão PDO
+         *  UPDATE table_name SET col1 = :col1, col2 = :col2 WHERE field = :field 
+         */
 
     }
 
