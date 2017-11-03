@@ -6,7 +6,7 @@
 //     ]
 // ];
 $route->get('/', 'Home@index');
-$route->get('/test', 'Test@show');
+$route->get('/teste', 'Test@show');
 // $this->input=[
 //     "POST"=>[
 //         "/login/auth" => "Login@auth",
