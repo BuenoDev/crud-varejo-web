@@ -14,20 +14,20 @@ body{
 .form{
     display: block;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder { 
     opacity:  0.5;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+:-moz-placeholder { 
     opacity:  0.5;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+::-moz-placeholder { 
     opacity:  0.5;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
     opacity:  0.5;
 }
-::-ms-input-placeholder { /* Microsoft Edge */
-   
+::-ms-input-placeholder {
+    opacity:  0.5;
 }
 .form div{
     padding: 10px;

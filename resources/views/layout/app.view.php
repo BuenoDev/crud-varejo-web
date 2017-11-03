@@ -13,11 +13,21 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
+    <div class="funcional">
+        <div class="dashboard">
+            <ul>
+                <li>Produtos</li>
+                <li>vendas</li>
+            </ul>
+        </div>
+        <div class=>
+
+        </div>
         <header class="header">
-        <h1>Varejo</h1>   
+            <h1>Varejo</h1>   
         </header>
-        <footer>
-          
+    </div>
+        <footer class = "footer"> 
         </footer>
     </body>
     </html>
