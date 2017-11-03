@@ -11,18 +11,16 @@
             </head>
 <body>
     <div class="container">
-      <div class="login">
+      <div class="login">      
       <form class="form" action="" method="POST">
               <div>
-              <label>Login</label>
-              <input type="text" name="login">
+              <input class="input-green" type="text" name="login" placeholder="Usuario" required>
               </div>
               <div>
-              <label>Senha</label>
-              <input type="password" name="senha">
+              <input class="input-green" type="password" name="senha" placeholder="Senha" required>
               </div>
               <div>
-              <button class="btn">Logar</button>
+              <button class="btn-green">Logar</button>
               </div>
       </form>
       </div>

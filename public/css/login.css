@@ -1,8 +1,32 @@
 .login{
-    width: 50%;
-    margin: auto auto;
-    text-align: center;
-    max-width: 250px;
-
+    margin: 200px auto;
+    width: 350px;
+    -webkit-transition-duration:  1s;
+    transition-duration: 1s;
+    background: white;
+    position: relative;
+    padding: 40px;
 }
+
+.form {
+    width: 100%;
+}
+input{
+    background-color: #e6e6ff;
+    outline: none;
+    /* -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; */
+    text-align: justify;
+    -webkit-transition-duration:  0.8s;
+    transition-duration: 0.8s;
+}
+.form div button{
+    -webkit-transition-duration:  1s;
+    transition-duration: 1s;
+}
+.form div:last-child{
+    text-align: center;
+}
+
 
