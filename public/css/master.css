@@ -3,8 +3,9 @@
 }
 body{
     margin: 0;
-    background-color: #77C45E;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    background-color:white;
+    font-family: sans-serif;
 }
 .container{
     width: 80%;
@@ -51,4 +52,8 @@ body{
     font-size: 1em;
     color: white;
     font-weight: 100;
+}
+li a{
+    text-decoration: inherit;
+    color: inherit;
 }

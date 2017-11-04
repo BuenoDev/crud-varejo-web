@@ -11,23 +11,20 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/master.css">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
-    <div class="funcional">
-        <div class="dashboard">
+    <div class = "funcional">
+        <div class = "dashboard">
             <ul>
-                <li>Produtos</li>
-                <li>vendas</li>
+                <li><a href="">Vender Produto</a> <i class="fa fa-opencart"></i> </li>
+                <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
+                <li><a href="">Produtos</a> <i class="fa fa-opencart"></i> </li>
+                <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
             </ul>
         </div>
-        <div class=>
-
+        <div class = "dados">
         </div>
-        <header class="header">
-            <h1>Varejo</h1>   
-        </header>
     </div>
-        <footer class = "footer"> 
-        </footer>
     </body>
     </html>
