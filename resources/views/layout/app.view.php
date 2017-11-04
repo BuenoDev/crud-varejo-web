@@ -11,7 +11,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/master.css">
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class = "funcional">
