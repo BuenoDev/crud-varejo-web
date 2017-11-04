@@ -1,8 +1,50 @@
+.funcional{
+    height: 100vh;
+    width: 100%;
+}
 .dashboard{
+    box-shadow: 2px 1px 5px #56568f;
+    margin: 0;
+    padding: 0;
     float: left;
-    height: 100%;
-    width: 15%;
+    height: 100vh;
+    width: 13%;
+    background: #343458;
+    color: white;
 }
-.header{
+.dashboard ul{
+    padding: 0;
+    padding-left: 2px;
+    margin-top: 70px;
+    list-style-type: none;
+}
+.dashboard ul li{
+    padding: 10px 5px;
+    font-size: 20px;
+    border-bottom: 1.5px solid #3A3A61;
+    opacity: 1.1;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    display: block;
+}
+.dashboard ul li i{
+    text-align: inherit;
+    visibility: hidden;
+    color: #343458;
+    padding-left: 5px;
+}
+.dashboard ul li:hover >i{
     float: right;
+    visibility: visible;
 }
+.dashboard ul li:hover{
+    opacity: 1;
+    background: #00B242;
+    width: 240px;
+    padding: 10px;
+    box-shadow: 1.5px 0.5px 1px #56568f;
+}
+
+
+
