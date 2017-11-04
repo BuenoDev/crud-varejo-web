@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-    <div class = "funcional">
-        <div class = "dashboard">
+    <div class = "dash">
+        <div class = "nav">
             <ul>
                 <li><a href="">Vender Produto</a> <i class="fa fa-opencart"></i> </li>
                 <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
@@ -24,7 +24,18 @@
             </ul>
         </div>
         <div class = "dados">
+            <div class="login-status">
+                <span class="bem-vindo">Bem Vindo,</span>
+                <i class="fa fa-power-off"></i><br>
+                <span class="nome-usuario">Nome Usuario</span>
+            </div>
+            <div class="data">
+
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        
+    </footer>
     </body>
     </html>

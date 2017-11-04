@@ -1,8 +1,8 @@
-.funcional{
+.dash{
     height: 100vh;
     width: 100%;
 }
-.dashboard{
+.nav{
     box-shadow: 2px 1px 5px #56568f;
     margin: 0;
     padding: 0;
@@ -12,13 +12,16 @@
     background: #343458;
     color: white;
 }
-.dashboard ul{
+.dados{
+    height: 100vh;
+}
+.nav ul{
     padding: 0;
     padding-left: 2px;
     margin-top: 70px;
     list-style-type: none;
 }
-.dashboard ul li{
+.nav ul li{
     padding: 10px 5px;
     font-size: 20px;
     border-bottom: 1.5px solid #3A3A61;
@@ -28,22 +31,52 @@
     transition: all 0.8s ease;
     display: block;
 }
-.dashboard ul li i{
+.nav ul li i{
     text-align: inherit;
     visibility: hidden;
     color: #343458;
     padding-left: 5px;
 }
-.dashboard ul li:hover >i{
+.nav ul li:hover >i{
     float: right;
     visibility: visible;
 }
-.dashboard ul li:hover{
+.nav ul li:hover{
     opacity: 1;
     background: #00B242;
     width: 240px;
     padding: 10px;
     box-shadow: 1.5px 0.5px 1px #56568f;
+}
+
+.login-status{
+    text-align: end;
+    padding-right: 10px;
+    margin: 0;
+}
+.login-status .bem-vindo{
+    font-size: 13px;
+}
+.login-status i{
+    color: white;
+    background-color: red;
+    padding: 8px 4px 3px 4px;
+    margin-left: 20px;
+}
+.login-status .nome-usuario{
+    font-weight: bold;
+}
+.data{
+    margin: 100px 50px 100px 250px;
+    background-color: white;
+    padding: 250px 250px 300px 250px;
+}
+.footer{
+    box-shadow: 1px 1px 5   px #56568f;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
 }
 
 
