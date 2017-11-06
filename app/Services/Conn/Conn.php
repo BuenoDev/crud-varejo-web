@@ -1,6 +1,6 @@
 <?php
 /** Conexão com banco de dados usando padrão SingleTon */
-namespace Varejo\Conn;
+namespace Varejo\Services\Conn;
 
 abstract class Conn{
     private static $conection = null;

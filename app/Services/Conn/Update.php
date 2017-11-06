@@ -1,6 +1,6 @@
 <?php
 /** Atualização de registros no banco de dados */
-namespace Varejo\Conn;
+namespace Varejo\Services\Conn;
 
 class Update extends Conn{
     private $table;

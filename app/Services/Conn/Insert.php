@@ -2,7 +2,7 @@
 /** 
  * Controlando inserção de registros no banco de dados com tratamento das queryies
  */
-namespace Varejo\Conn;
+namespace Varejo\Services\Conn;
 
 class Insert extends Conn{
     private $table;

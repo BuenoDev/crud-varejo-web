@@ -3,10 +3,10 @@
 
 namespace Varejo\Model;
 
-use Varejo\Conn\Insert;
-use Varejo\Conn\Update;
-use Varejo\Conn\Select;
-use Varejo\Conn\Delete;
+use Varejo\Services\Conn\Insert;
+use Varejo\Services\Conn\Update;
+use Varejo\Services\Conn\Select;
+use Varejo\Services\Conn\Delete;
 
 abstract class Model{
 
