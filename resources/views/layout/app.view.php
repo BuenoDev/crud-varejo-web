@@ -20,7 +20,7 @@
                 <li><a href="">Vender Produto</a> <i class="fa fa-opencart"></i> </li>
                 <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
                 <li><a href="">Produtos</a> <i class="fa fa-opencart"></i> </li>
-                <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
+                <li><a href="">Registrar Produto</a> <i class="fa fa-opencart"></i> </li>
             </ul>
         </div>
         <div class = "dados">
