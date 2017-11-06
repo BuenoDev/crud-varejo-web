@@ -65,7 +65,9 @@ class Route{
     private function loadController(){         
         $control = $this->input[$this->method()][$this->uri];
         $control = explode("@", $control);
-        if(file_exists(__DIR__ . _DS_ . '..' . _DS_ . 'Controller' . _DS_ . $control[0] . ".php")){
+        $path_control = str_replace('\\', '/', $control[0]);
+
+        if(file_exists(__DIR__ . _DS_ . '..' . _DS_ . 'Controller' . _DS_ . $path_control . ".php")){
             $namespace = "\\Varejo\\Controller\\" . $control[0];
             $this->obj = new $namespace;
             $this->loadMethod($control[1]);

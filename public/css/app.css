@@ -21,7 +21,7 @@
     margin-top: 70px;
     list-style-type: none;
 }
-.nav ul li{
+.nav ul a{
     padding: 10px 5px;
     font-size: 18px;
     border-bottom: 1.5px solid #3A3A61;
