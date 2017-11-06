@@ -7,7 +7,7 @@
 // ];
 $route->get('/', 'Login@show');
 $route->get('/test', 'Test@show');
-$route->get('/bruno/test', 'Dashboard\Home@index');
+$route->get('/dash', 'Dashboard\Home@home');
 // $route->get('/test/{variavel}', 'Test@dinamic');
 
 // $this->input=[

@@ -12,7 +12,7 @@
 <body>
     <div class="container">
       <div class="login">      
-      <form class="form" action="" method="POST">
+      <form class="form" action="/login/auth" method="POST">
               <div>
               <input class="input-green" type="text" name="login" placeholder="Usuario" required>
               </div>

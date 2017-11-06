@@ -27,7 +27,7 @@
             <div class="header">
                 <span class="bem-vindo">Bem Vindo,</span>
                 <i class="fa fa-power-off"></i><br>
-                <span class="nome-usuario">Nome Usuario</span>
+                <span class="nome-usuario">Admin</span>
             </div>
             <div class="data">
 

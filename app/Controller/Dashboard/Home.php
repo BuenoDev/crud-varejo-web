@@ -8,8 +8,9 @@ use Varejo\Controller\Controller;
 
 class Home extends Controller{
 
-    public function index(){
+    public function home(){
+        
+        return view('layout/app');
 
-        return view('dashboard/home');
     }
 }
