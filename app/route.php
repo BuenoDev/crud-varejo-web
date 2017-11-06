@@ -5,7 +5,7 @@
 //         "/" => "Home@index",
 //     ]
 // ];
-$route->get('/', 'Home@index');
+$route->get('/', 'Login@show');
 $route->get('/test', 'Test@show');
 $route->get('/bruno/test', 'Dashboard\Home@index');
 // $route->get('/test/{variavel}', 'Test@dinamic');
