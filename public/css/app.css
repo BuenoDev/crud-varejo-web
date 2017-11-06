@@ -44,9 +44,10 @@
 .nav ul li:hover{
     opacity: 1;
     background: #00B242;
-    width: 240px;
+    width: 120%;
     padding: 10px;
     box-shadow: 1.5px 0.5px 1px #56568f;
+    border-radius: 5px;
 }
 
 .header{
