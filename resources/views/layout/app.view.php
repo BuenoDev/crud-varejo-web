@@ -24,7 +24,7 @@
             </ul>
         </div>
         <div class = "dados">
-            <div class="login-status">
+            <div class="header">
                 <span class="bem-vindo">Bem Vindo,</span>
                 <i class="fa fa-power-off"></i><br>
                 <span class="nome-usuario">Nome Usuario</span>

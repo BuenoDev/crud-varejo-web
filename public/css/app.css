@@ -49,21 +49,21 @@
     box-shadow: 1.5px 0.5px 1px #56568f;
 }
 
-.login-status{
+.header{
     text-align: end;
     padding-right: 10px;
     margin: 0;
 }
-.login-status .bem-vindo{
+.header .bem-vindo{
     font-size: 13px;
 }
-.login-status i{
+.header i{
     color: white;
     background-color: red;
     padding: 8px 4px 3px 4px;
     margin-left: 20px;
 }
-.login-status .nome-usuario{
+.header .nome-usuario{
     font-weight: bold;
 }
 .data{
