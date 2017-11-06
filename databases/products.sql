@@ -11,4 +11,6 @@ CREATE TABLE products(
     created_at timestamp,
     updated_at timestamp,
     PRIMARY KEY(id)
+    FOREIGN KEY(user_id) REFERENCES users(id),
+    FOREIGN KEY(category_id) REFERENCES categories(id)
 )
