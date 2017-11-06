@@ -27,6 +27,15 @@ if(!function_exists('view')){
 }
 
 /**
+ * Retorno de view renderizada
+ */
+if(!function_exists('view_path')){
+    function view_path($view){
+        return ROOT_PATH . _DS_ . 'resources' . _DS_ . 'views' . _DS_ . $view . '.view.php';
+    }
+}
+
+/**
  * Aresentação e tratamento de erro na aplicação
  */
 if(!function_exists('errorDebug')){
