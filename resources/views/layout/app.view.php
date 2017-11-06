@@ -26,7 +26,7 @@
         <div class = "dados">
             <div class="header">
                 <span class="bem-vindo">Bem Vindo,</span>
-                <i class="fa fa-power-off"></i><br>
+                <a href="http://localhost:8000/logout"><i class="fa fa-power-off"></i></a><br>
                 <span class="nome-usuario">Admin</span>
             </div>
             <div class="data">

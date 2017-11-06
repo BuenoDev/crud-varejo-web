@@ -8,6 +8,7 @@
 $route->get('/', 'Login@show');
 $route->get('/test', 'Test@show');
 $route->get('/dash', 'Dashboard\Home@home');
+$route->get('/logout', 'login@logout');
 // $route->get('/test/{variavel}', 'Test@dinamic');
 
 // $this->input=[
