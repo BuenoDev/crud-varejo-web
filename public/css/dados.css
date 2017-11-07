@@ -1,0 +1,10 @@
+.dados .home{
+    text-align: center;
+    display: block;
+    font-size: 80px;
+    margin-top: 250px;
+    color: #343458;
+}
+.dados .home span{
+    font-weight: bold;
+}

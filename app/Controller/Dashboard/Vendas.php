@@ -12,6 +12,12 @@ class Vendas extends Controller{
         session_start();
         if(isset($_SESSION['user'])){
             if($_SESSION['user']['login'] == 'admin' && $_SESSION['user']['senha'] == 'admin'){
+                $_SESSION['views']['menu']='menu1';
+                $_SESSION['css']['menu']='menu';
+                $_SESSION['views']['header']='header1';
+                $_SESSION['css']['header']='header';
+                $_SESSION['views']['dados']='vendas';
+                $_SESSION['css']['dados']='dados';
                 return view('layout/app');
             } 
         }else{

@@ -1,2 +1,2 @@
 <?php
-    include view_path('layput/app');
+    include view_path('layout/app');

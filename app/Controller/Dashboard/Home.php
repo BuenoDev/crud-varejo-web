@@ -12,7 +12,13 @@ class Home extends Controller{
         session_start();
         if(isset($_SESSION['user'])){
             if($_SESSION['user']['login'] == 'admin' && $_SESSION['user']['senha'] == 'admin'){
-                return view('layout/app');
+                $_SESSION['views']['menu']='menu1';
+                $_SESSION['css']['menu']='menu';
+                $_SESSION['views']['header']='header1';
+                $_SESSION['css']['header']='header';
+                $_SESSION['views']['dados']='home';
+                $_SESSION['css']['dados']='dados';
+                view('layout/app');
             } 
         }else{
             header("Location: /");
