@@ -1,0 +1,17 @@
+.header .header1{
+    text-align: end; 
+    padding-right: 10px;
+    margin: 0;
+}
+.header .header1 .bem-vindo{
+    font-size: 13px;
+}
+.header .header1 i{
+    color: white;
+    background-color: red;
+    padding: 8px 4px 3px 4px;
+    margin-left: 20px;
+}
+.header .header1 .nome-usuario{
+    font-weight: bold;
+}
