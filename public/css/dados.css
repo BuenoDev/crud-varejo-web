@@ -36,3 +36,105 @@
 .dados .produtos i{
     text-align: center;
 }
+.dados .vender .produto-venda{
+    float: left;
+    text-align: center;
+    margin: 0 25px;
+    width: 65%;
+    background-color: white;
+    padding: 10px;
+}
+.dados .vender .produtos{
+    border: 1px solid #e1e1e1;
+    margin: 0 0 12px 0;
+    height: 60vh;
+    overflow-y: auto;
+}
+.dados .vender .input-venda form{
+    position: relative;
+}
+.dados .vender .input-venda input{
+    width: 100%;
+    outline: none;
+    border: 2px solid #343458;
+    background-color: #afafcf;
+    text-align: left;
+    font-size: 30px;
+    padding: 20px 200px 20px 20px;
+    font-weight: 100;
+}
+.dados .vender .input-venda button{
+    color: white;
+    font-size: 30px;
+    position: absolute; 
+    top: 12px;
+    right: 10px;
+    border-radius: 6px;
+}
+.dados .vender .resumo-venda{
+    float: right;
+    background-color: white;
+    width: 30%;
+    padding: 10px;
+}
+.dados .vender .resumo-venda span{
+    text-align: left;
+    color: #00B242;
+    font-size: 25px;
+}
+.dados .vender .resumo-venda span i{
+    margin: 0 20px 10px 5px;
+    font-size: 40px;
+}
+.dados .vender .resumo-venda .tabela{
+    height: 47vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.dados .vender .resumo-venda table{
+    
+    border-collapse: collapse;
+    margin: 5px 2px;
+    width: 100%;
+    border: none;
+}
+.dados .vender .resumo-venda td{
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+}
+.dados .vender .resumo-venda tr td:first-child{
+    width: 50%;
+    text-align: left;
+    border-right: 1px solid #e1e1e1;
+}
+.dados .vender .resumo-venda td:last-child{
+    width: 10%;
+    border-bottom: 1px solid #e1e1e1;
+}
+.dados .vender .resumo-venda tr a{
+    color: red;
+}
+.dados .vender .resumo-venda .total{
+    margin: 5px 10px;
+    text-align: left;
+    font-weight: bold;
+}
+.dados .vender .resumo-venda .total span:first-child{
+    margin: 0 70px 0 25px;
+    color: #343458;
+}
+.dados .vender .resumo-venda .buttons button{
+    margin: 37px 20px 20px 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+.dados .vender .resumo-venda .buttons :first-child{
+    float: left;
+}
+.dados .vender .resumo-venda .buttons :last-child{
+    float: right;
+    margin-right: 30px;
+}
+

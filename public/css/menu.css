@@ -1,4 +1,6 @@
 .nav .menu1{
+    position: relative;
+    z-index: 99;
     border-radius: 0 5px 5px 0;
     box-shadow: 2px 1px 5px #56568f;
     height: 100%;
@@ -23,6 +25,7 @@
     display: block;
 }
 .nav .menu1 ul li i{
+    margin: 2px 0;
     text-align: inherit;
     visibility: hidden;
     color: #343458;
@@ -35,7 +38,7 @@
 .nav .menu1 ul li:hover{
     opacity: 1;
     background: #00B242;
-    width: 120%;
+    width: 118%;
     padding: 10px;
     box-shadow: 1.5px 0.5px 1px #56568f;
     border-radius: 0 5px 5px 0 ;
