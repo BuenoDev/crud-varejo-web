@@ -11,6 +11,9 @@
 }
 
 /* PRODUTOS */
+.dados .produtos{
+    margin: 5%;
+}
 .dados .produtos table, td, th{
     border: 1px solid rgb(148, 146, 146);
     border-collapse: collapse;
@@ -18,13 +21,18 @@
 }
 .dados .produtos table{
     width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
 }
 .dados .produtos th{
-    color: rgba(0, 0, 255, 0.39);
-    background-color: rgb(124, 124, 252); 
+    color: #343458;
+    background-color: rgb(154, 154, 253); 
     font-size: 25px;
     font-weight: normal;
+    text-align: left;
 }
 .dados .produtos td{
-    background-color: rgba(128, 128, 128, 0.199);
+    background-color: rgba(158, 157, 157, 0.199);
+}
+.dados .produtos i{
+    text-align: center;
 }
