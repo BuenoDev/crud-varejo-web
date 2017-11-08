@@ -4,6 +4,7 @@ namespace Varejo\Services;
 
 class Route{
     private $input = [];
+    private $buildParams = [];
     private $uri;
     private $obj;
 
@@ -102,10 +103,17 @@ class Route{
      */
     private function isRouteExists(){
         foreach($this->input as $input){
+            $this->buildParams($input);
             if(array_key_exists($this->uri, $input)){
                 return true;
             }
         }
+        
         return false;
+    }
+
+    private function buildParams($input){
+        $first = \strpos($input, "{");
+        dd(array_keys($input));
     }
 }
