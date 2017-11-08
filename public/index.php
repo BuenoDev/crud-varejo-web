@@ -1,6 +1,7 @@
 <?php
 
 use Varejo\Services\RenderView;
+use Varejo\Services\Request;
 /**
  * Definição de constantes de apoio ao sistema
  */
@@ -23,3 +24,6 @@ require __DIR__ . _DS_ . '..' . _DS_ . 'vendor' . _DS_ . 'autoload.php';
 $route = new \Varejo\Services\Route;
 require __DIR__ . _DS_ . '..' . _DS_ . 'app' . _DS_ . 'route.php';
 $route->execute();
+
+// $request = new Request();
+// dd($request->all());

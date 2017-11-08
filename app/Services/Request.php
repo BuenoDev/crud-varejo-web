@@ -24,4 +24,10 @@ class Request{
         }
         return $this->post;
     }
+
+    public function all(){
+        $arr_get = \filter_input_array(\INPUT_GET, \FILTER_DEFAULT);
+        $arr_post = \filter_input_array(\INPUT_POST, \FILTER_DEFAULT);        
+        return array_merge($arr_get, $arr_post);
+    }
 }
