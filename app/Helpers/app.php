@@ -8,6 +8,7 @@ if(!function_exists('dd')){
         echo "<pre>";
             var_dump($args);
         echo "</pre>";
+        die;
     }
 }
 

@@ -11,7 +11,7 @@ class Test extends Controller{
 
     }
 
-    public function dynamic(){
-        
+    public function dynamic($params){
+        echo $params['id'];
     }
 }
