@@ -31,5 +31,8 @@ input{
 .form div:last-child{
     text-align: center;
 }
+.btn-green{
+    width: 100%;
+}
 
 

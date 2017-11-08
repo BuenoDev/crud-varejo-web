@@ -113,7 +113,7 @@ class Route{
     }
 
     private function buildParams($input){
-        $first = \strpos($input, "{");
+        // $first = \strpos($input, "{");
         // dd(array_keys($input));
     }
 }

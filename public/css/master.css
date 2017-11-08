@@ -43,12 +43,27 @@ body{
     padding: 15px;
 }
 .btn-green{
-    display: inline-block;
-    width: 100%;
     border: none;
-    padding: 15px 15px;
+    padding: 10px 10px;
     cursor: pointer;
     background-color: #00B242;
+    font-size: 1em;
+    color: white;
+    font-weight: 100;
+}
+.btn-blue{
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: #343458;
+    font-size: 1em;
+    color: white;
+}
+.btn-red{
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: red;
     font-size: 1em;
     color: white;
     font-weight: 100;
