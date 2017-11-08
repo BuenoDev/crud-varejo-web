@@ -4,7 +4,7 @@ namespace Varejo\Services;
 
 class Route{
     private $input = [];
-    private $buildParams = [];
+    private $params = [];
     private $uri;
     private $obj;
 
@@ -101,19 +101,34 @@ class Route{
      * método de requisição
      * @return boolean
      */
-    private function isRouteExists(){
-        foreach($this->input as $input){
-            $this->buildParams($input);
-            if(array_key_exists($this->uri, $input)){
-                return true;
-            }
-        }
-        
-        return false;
+    private function isRouteExists(){    
+        $this->buildParams();
     }
 
-    private function buildParams($input){
-        $first = \strpos($input, "{");
-        // dd(array_keys($input));
+    private function buildParams(){
+        foreach($this->input as $method => $routes){
+            foreach($routes as $route => $control){
+                $params = explode("/", $route);
+                unset($params[0]);
+                foreach($params as $param){
+                    $first = strpos($param,'{');
+                    $last = strpos($param, '}');
+                    if($first !== false){
+                        $this->params[] = substr($param, $first + 1, $last -1);
+                        // $route = str_replace($route)
+                    }
+                }
+
+
+            }
+
+            dd($this->params);
+
+            // if(array_key_exists($this->uri, $input)){
+                
+            // }
+        }
+
+       
     }
 }
