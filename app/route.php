@@ -21,3 +21,6 @@ $route->get('/registrar', 'Dashboard\Registrar@show');
 //     ]
 // ];
 $route->post('/login/auth', 'Login@auth');
+
+
+$route->get('/test/{id}', 'Test@dynamic');
