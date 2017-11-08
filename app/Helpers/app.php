@@ -18,7 +18,7 @@ if(!function_exists('view')){
     function view($view, array $vars = []){
         $resources = '../resources/views/' . $view . '.view.php';
         if(file_exists($resources)){
-            echo file_get_contents($resources);
+            require_once $resources;
         }else{
             echo "ERROR: View {$view} não encontrada";
         }

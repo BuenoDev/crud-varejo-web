@@ -1,3 +1,4 @@
+
 <!-- O arquivo base tem como objetivo conter os objetos de 
     Layout que serão comuns em todas as páginas, para 
     facilitar a criação de páginas novas copiando e colando
@@ -12,30 +13,30 @@
         <link rel="stylesheet" href="css/master.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- CSS personalizado -->
+        <?php 
+        foreach ($_SESSION['css'] as $style) {
+            echo "<link rel='stylesheet' href='css/{$style}.css'>";
+        }
+        ?>
     </head>
     <body>
-    <div class = "dash">
-        <div class = "nav">
-            <ul>
-                <li><a href="">Vender Produto</a> <i class="fa fa-opencart"></i> </li>
-                <li><a href="">Vendas</a> <i class="fa fa-opencart"></i> </li>
-                <li><a href="">Produtos</a> <i class="fa fa-opencart"></i> </li>
-                <li><a href="">Registrar Produto</a> <i class="fa fa-opencart"></i> </li>
-            </ul>
+    <div class="dash">
+        <div class="nav">
+            <?php 
+            view('pieces/menu/' . $_SESSION['views']['menu']);
+            ?>
         </div>
-        <div class = "dados">
-            <div class="header">
-                <span class="bem-vindo">Bem Vindo,</span>
-                <a href="http://localhost:8000/logout"><i class="fa fa-power-off"></i></a><br>
-                <span class="nome-usuario">Admin</span>
-            </div>
-            <div class="data">
-
-            </div>
+        <div class="header">
+            <?php 
+            view('pieces/headers/' . $_SESSION['views']['header']);
+            ?>
+        </div>
+        <div class="dados">
+            <?php 
+            view('pieces/dados/' . $_SESSION['views']['dados']);
+            ?>
         </div>
     </div>
-    <footer class="footer">
-        
-    </footer>
     </body>
     </html>

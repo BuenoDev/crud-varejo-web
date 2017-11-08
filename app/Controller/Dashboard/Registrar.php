@@ -6,9 +6,9 @@ namespace Varejo\Controller\Dashboard;
 use Varejo\Controller\Controller;
 
 
-class Home extends Controller{
+class Registrar extends Controller{
 
-    public function home(){
+    public function show(){
         session_start();
         if(isset($_SESSION['user'])){
             if($_SESSION['user']['login'] == 'admin' && $_SESSION['user']['senha'] == 'admin'){
@@ -16,9 +16,9 @@ class Home extends Controller{
                 $_SESSION['css']['menu']='menu';
                 $_SESSION['views']['header']='header1';
                 $_SESSION['css']['header']='header';
-                $_SESSION['views']['dados']='home';
+                $_SESSION['views']['dados']='registrar';
                 $_SESSION['css']['dados']='dados';
-                view('layout/app');
+                return view('layout/app');
             } 
         }else{
             header("Location: /");

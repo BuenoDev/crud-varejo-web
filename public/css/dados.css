@@ -1,0 +1,30 @@
+/* HOME */
+.dados .home{
+    text-align: center;
+    display: block;
+    font-size: 80px;
+    margin-top: 250px;
+    color: #343458;
+}
+.dados .home span{
+    font-weight: bold;
+}
+
+/* PRODUTOS */
+.dados .produtos table, td, th{
+    border: 1px solid rgb(148, 146, 146);
+    border-collapse: collapse;
+    padding: 10px;
+}
+.dados .produtos table{
+    width: 100%;
+}
+.dados .produtos th{
+    color: rgba(0, 0, 255, 0.39);
+    background-color: rgb(124, 124, 252); 
+    font-size: 25px;
+    font-weight: normal;
+}
+.dados .produtos td{
+    background-color: rgba(128, 128, 128, 0.199);
+}
