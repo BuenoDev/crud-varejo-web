@@ -12,7 +12,12 @@
 
 /* PRODUTOS */
 .dados .produtos{
-    margin: 5%;
+    height: 70vh;
+    margin: 2%;
+    padding: 7px 15px;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x:hidden; 
 }
 .dados .produtos table, td, th{
     border: 1px solid rgb(148, 146, 146);
@@ -21,9 +26,9 @@
 }
 .dados .produtos table{
     width: 100%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
 }
 .dados .produtos th{
+    width: 20%;
     color: #343458;
     background-color: rgb(154, 154, 253); 
     font-size: 25px;
@@ -36,6 +41,18 @@
 .dados .produtos i{
     text-align: center;
 }
+.dados .produtos .fa-opencart{
+    color: #00B242;
+}
+.dados .produtos .fa-edit{
+    color: #343458;
+}
+.dados .produtos .fa-trash{
+    color: red;
+}
+.dados .produtos table td a{
+    margin: 0 35%;
+}
 .dados .vender .produto-venda{
     float: left;
     text-align: center;
@@ -45,6 +62,7 @@
     padding: 10px;
 }
 .dados .vender .produtos{
+    padding: 0;
     border: 1px solid #e1e1e1;
     margin: 0 0 12px 0;
     height: 60vh;
