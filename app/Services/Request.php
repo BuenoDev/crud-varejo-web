@@ -5,6 +5,7 @@ namespace Varejo\Services;
 class Request{
     private $get;
     private $post;
+    private $all = [];
 
     function __construct(){
         $this->get = filter_input_array(INPUT_GET, FILTER_DEFAULT);
@@ -25,9 +26,24 @@ class Request{
         return $this->post;
     }
 
-    public function all(){
-        $arr_get = \filter_input_array(\INPUT_GET, \FILTER_DEFAULT);
-        $arr_post = \filter_input_array(\INPUT_POST, \FILTER_DEFAULT);        
-        return array_merge($arr_get, $arr_post);
+    public function all(){        
+         $merge = array_merge($this->get, $this->post);
+         foreach($merge as $key => $value){
+            $this->all[$key] = $value;
+         }
+
+         return $this->all;
+    }
+
+    public function __get($attribute){
+        return $this->all[$attribute];
+    }
+
+    public function __set($attribute, $value){
+        $this->all[$attribute] = $value;
+    }
+
+    public function __isset($attribute){
+        return isset($this->all[$attribute]);
     }
 }
