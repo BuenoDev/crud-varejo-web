@@ -1,6 +1,6 @@
 <?php
 
-$route->get('/test/{id}/test/{param}', 'Test@dynamic');
+$route->get('/test/{id}', 'Test@dynamic');
 
 // $this->input=[
 //     "GET"=>[

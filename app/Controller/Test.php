@@ -12,6 +12,13 @@ class Test extends Controller{
     }
 
     public function dynamic($params){
-        echo $params['id'];
+        $namespace="Varejo\\Model\\User";
+        $user = new $namespace;
+        $user->insert([
+            'name'=> 'fulano'.time(),
+            'email'=> time().'@gmail.com',
+            'password'=> 'fulanootal'
+        ]);
+        
     }
 }

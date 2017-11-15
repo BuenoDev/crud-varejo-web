@@ -30,9 +30,8 @@ abstract class Model{
      */
     public function insert($data){
         $this->insert = new Insert;
-        if($this->insert->execute($this->table, $data)){
-            return $insert->result();
-        }
+        return $this->insert->execute($this->table, $data);
+        
     }
 
     /**
@@ -74,7 +73,7 @@ abstract class Model{
      * @param int $id
      */
     public function delete($id){
-        
+
     }
 
     /**

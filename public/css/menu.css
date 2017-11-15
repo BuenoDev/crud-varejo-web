@@ -19,9 +19,6 @@
     font-size: 18px;
     border-bottom: 1.5px solid #3A3A61;
     opacity: 1.1;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    transition: all 0.8s ease;
     display: block;
 }
 .nav .menu1 ul li i{
@@ -36,6 +33,9 @@
     visibility: visible;
 }
 .nav .menu1 ul li:hover{
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
     opacity: 1;
     background: #00B242;
     width: 118%;
