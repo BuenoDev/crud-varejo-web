@@ -38,9 +38,11 @@
 .dados .produtos td{
     background-color: rgba(158, 157, 157, 0.199);
 }
-.dados .produtos i{
+
+.dados .produtos tr th:last-child{
     text-align: center;
 }
+
 .dados .produtos .fa-opencart{
     color: #00B242;
 }
@@ -51,7 +53,7 @@
     color: red;
 }
 .dados .produtos table td a{
-    margin: 0 35%;
+    /* margin: 0 35%; */
 }
 .dados .vender .produto-venda{
     float: left;
@@ -68,7 +70,7 @@
     height: 60vh;
     overflow-y: auto;
 }
-.dados .vender .input-venda form{
+.dados .vender .input-venda{
     position: relative;
 }
 .dados .vender .input-venda input{
@@ -78,7 +80,7 @@
     background-color: #afafcf;
     text-align: left;
     font-size: 30px;
-    padding: 20px 200px 20px 20px;
+    padding: 20px;
     font-weight: 100;
 }
 .dados .vender .input-venda button{
@@ -89,6 +91,15 @@
     right: 10px;
     border-radius: 6px;
 }
+
+.dados .vender .input-venda .add_loader{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    color: #FFF;
+    display: none;
+}
+
 .dados .vender .resumo-venda{
     float: right;
     background-color: white;
@@ -156,3 +167,20 @@
     margin-right: 30px;
 }
 
+.dados .vender tr{
+    cursor: pointer;
+}
+.dados .vender tr:hover{
+    background-color: #343458;
+    color: #FFF;
+}
+.dados .add_amount{
+    text-align: center;
+}
+.dados .add_amount input{
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+}

@@ -10,13 +10,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/master.css">
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?= url('/css/master.css') ?>">
+        <link rel="stylesheet" href="<?= url('/css/app.css') ?>">
+        <link rel="stylesheet" href="<?= url('/css/font-awesome.min.css') ?>">
         <!-- Carregamento de CSS personalizado -->
         <?php 
-        foreach ($_SESSION['css'] as $style) {
-            echo "<link rel='stylesheet' href='css/{$style}.css'>";
+        foreach ($data['css'] as $style) {
+            echo "<link rel='stylesheet' href='" . url("/css/{$style}.css") . "'>";
         }
         ?>
     </head>
@@ -25,21 +25,23 @@
         <div class="nav">
         <!-- carregamento da view menu personalizado -->
             <?php 
-            view('pieces/menu/' . $_SESSION['views']['menu']);
+            view('pieces/menu/' . $data['views']['menu']);
             ?>
         </div>
         <div class="header">
         <!-- carregamento da view header personalizado -->
             <?php 
-            view('pieces/headers/' . $_SESSION['views']['header']);
+            view('pieces/headers/' . $data['views']['header']);
             ?>
         </div>
         <div class="dados">
         <!-- carregamento da view dados personalizado -->
             <?php 
-            view('pieces/dados/' . $_SESSION['views']['dados']);
+            view('pieces/dados/' . $data['views']['dados'], $data);
             ?>
         </div>
     </div>
+    <script src="<?= url('/javascript/jquery-1.12.1.min.js') ?>"></script>
+    <script src="<?= url('/javascript/script.js') ?>"></script>
     </body>
     </html>

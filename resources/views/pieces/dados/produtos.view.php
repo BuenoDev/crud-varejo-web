@@ -1,3 +1,9 @@
+<?php if(isset($_SESSION['insert'])): ?>
+    <div class="container">
+        <div class="alert alert-success"><?=$_SESSION['insert']?></div>
+    </div>
+<?php unset($_SESSION['insert']); endif;?>
+    
 <div class="produtos">
     <table>
         <tr>
@@ -5,19 +11,23 @@
             <th>Codigo</th>
             <th>Valor</th>
             <th>Quantidade</th>
-            <th colspan="3">Ação</th>
+            <th colspan="2">Ação</th>
         </tr>
-        <?php for($i=0;$i<100;$i++):  ?>
+        <?php foreach($data['info'] as $product):  ?>
         <tr>
-            <td>umo</td>
-            <td>buga</td>
-            <td>tedi</td>
-            <td>tal</td>
-            <td><a href=""><i class="fa fa-opencart"></i></a></td>
-            <td><a href=""><i class="fa fa-edit"></i></a></td>
-            <td><a href=""><i class="fa fa-trash"></i></a></td>
+            <td><?=$product['name']?></td>
+            <td><?=$product['code']?></td>
+            <td><?=$product['price']?></td>
+            <td><?=$product['amount']?></td>
+            <td class="text-align">
+                <a href="/product/edit/<?=$product['id']?>"><i class="fa fa-edit"></i></a></td>
+            <td class="text-align">
+                <form action="/product/delete/<?=$product['id']?>" method="POST">    
+                    <button class="btn-fa"><i class="fa fa-trash"></i></button>
+                </form>  
+            </td>
         </tr>
-        <?php endfor ; ?>
+        <?php endforeach ; ?>
 
     </table>
 </div>

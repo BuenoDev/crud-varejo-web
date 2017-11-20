@@ -15,6 +15,7 @@ abstract class Model{
     private $select;
     private $delete;
    
+    private $fields;
     /** Nome da tabela */
     protected $table;
     private $model;
@@ -42,29 +43,18 @@ abstract class Model{
         $this->update = new Update;
         $where = "WHERE";
         $clause = null;
-        if($clauses){
+
+
+        if(count($clauses[0]) > 1){
             foreach($clauses as $clause){
-                if(count($clauses[0]) > 1){
-                    foreach($clauses as $clause){
-                        $define = implode(' ', $clause);
-                    }  
-                }
-            }
-
-
-
-
-
-            if(count($clauses) == 1){
-                $define = implode(' ', $clauses);    
-            }else{
-                foreach($clauses as $clause){
-                    $define = implode(' ', $clause);
-                }      
-            }
-            $clause = "{$where} {$define}";
+                
+            } 
+        }else{
+            $define = $clauses[0] . ' ' . $clauses[1] . ' :' . $clauses[0]; 
+            $query_string = $clauses[0] . '=' . $clauses[2];
         }
         
+        $clause = "{$where} {$define}";
         $this->update->execute($this->table, $data, $clause, $query_string);
     }
 
@@ -73,39 +63,39 @@ abstract class Model{
      * @param int $id
      */
     public function delete($id){
-
+        $this->delete = new Delete;
+        $this->delete->execute($this->table, "WHERE id = :id", "id={$id}");
+        return $this->delete->result();
     }
 
     /**
      * Seleção de campos para leitura do SQL
      * @param $fields - campos da tabela
      */
-    public function select(...$fields){
+    public function select(... $selects){
+        $this->select = new Select;
+        $this->fields = $selects ? implode(', ', $selects) : '*';
         return $this;
     }
 
 
     /** Métodos curtos e diretos */    
     public function all(){
-
+        $this->select->execute($this->table, $this->fields);
+        return $this->select->result();
     }
 
     /**
      * @param int $id
      */
     public function find($id){
-        
+        $this->select->execute($this->table, $this->fields, "WHERE id = :id", "id={$id}");
+        return $this->select->result();
     } 
 
     public function findByField($field, $operador, $value){
-
-    } 
-
-    public function orderBy($field, $order){
-        
-    } 
-
-    public function get(){
-
+        $this->select->execute($this->table, $this->fields, "WHERE {$field} {$operador} :{$field}", "{$field}={$value}");
+        return $this->select->result();
     }
+    
 }

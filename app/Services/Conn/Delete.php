@@ -23,7 +23,6 @@ class Delete extends Conn {
 
         parse_str($parse_string, $this->parse_string);
 
-        $this->buildQuery();
         $this->finalize();
         
     }
@@ -49,9 +48,8 @@ class Delete extends Conn {
             $this->query->execute($this->parse_string);
             $this->result = true;
         } catch (PDOException $e) {
-            $this->result = NULL;
+            $this->result = null;
             error_debug($e, '<b>Erro ao Deletar conteúdo: </b>');
-            die;
         }
     }
 

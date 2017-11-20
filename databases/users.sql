@@ -8,4 +8,16 @@ CREATE TABLE users(
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (id),
     UNIQUE KEY (email)
-)
+);
+
+INSERT INTO users (
+    name,
+    email,
+    password,
+    role
+)VALUES(
+    'Admin',
+    'admin@admin.com',
+    'admin',
+    'admin'
+);
