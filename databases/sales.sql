@@ -1,6 +1,7 @@
 CREATE TABLE sales(
     id int(10) UNSIGNED AUTO_INCREMENT,
-    value decimal(5,2) NOT NULL,
+    name varchar(255) NOT NULL,
+    price decimal(7,2) NOT NULL,
     amount int(10) NOT NULL,
     code varchar(100),
     slug varchar(255),

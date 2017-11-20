@@ -147,12 +147,11 @@
 }
 .dados .vender .resumo-venda .total{
     margin: 5px 10px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
-.dados .vender .resumo-venda .total span:first-child{
-    margin: 0 70px 0 25px;
-    color: #343458;
+.dados .vender .resumo-venda .total .val_total{
+    color: #00B242;
 }
 .dados .vender .resumo-venda .buttons button{
     margin: 37px 20px 20px 20px;

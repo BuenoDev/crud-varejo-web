@@ -64,4 +64,9 @@ class Product extends Controller{
         $result = $this->product->select('id', 'name', 'code', 'amount', 'price')->findByField('name', 'LIKE', '%'. $request->post()['name'] . '%');
         echo json_encode($result);
     }
+    public function list_by_id(){
+        $request = new Request();
+        $result = $this->product->select('id', 'name', 'code', 'amount', 'price')->findByField('id', '=',$request->post()['id']);
+        echo json_encode($result);
+    }
 }

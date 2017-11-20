@@ -30,23 +30,19 @@
     <div class="resumo-venda">
         <span><i class='fa fa-opencart'></i> Resumo Vendas</span>
         <div class="tabela">
-            <table>
-                    <?php for( $x=0;$x<100;$x++): ?> 
-                        <tr>
-                            <td>pao</td>
-                            <td>R$ 0</td>
-                            <td><a href=""><i class="fa fa-trash"></i></a></td>
-                        </tr>
-                    <?php endfor; ?>
+            <tbody class="vendas">
+            <table class="resumo_tabela">
+                    
             </table>
+            </tbody>
+            
         </div>   
         <div class="total">
-            <span>TOTAL:</span>
-            <span>R$ 00,00</span>
+            <span class="val_total">R$ 00.00</span>
         </div>
         <div class="buttons">
-            <button class="btn-red">Limpar</button>
-            <button class="btn-green">Finalizar</button>
+            <button class="btn-red limpar">Limpar</button>
+            <button class="btn-green finalize">Finalizar</button>
         </div>
     </div>
 
@@ -59,8 +55,12 @@
             <h2>Quantidade</h2>
         </div>
         <div class="modal-body add_amount">
-            <input type="number" name="amount">
-            <button class="btn-blue">adicionar</button>
+           <form class='amout_vendas'>
+                <input type="number" name="amount" class="amout" min="1">
+                <button class="btn-blue">adicionar</button>
+           </form>
+                
+            
         </div>
     </div>
 </div>

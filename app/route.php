@@ -12,6 +12,7 @@ $route->get('/dashboard', 'Dashboard\Home@show');
 /** Vendas */
 $route->get('/sell', 'Dashboard\Sale@sell');
 $route->get('/sales', 'Dashboard\Sale@show');
+$route->post('/sale', 'Dashboard\Sale@sale');
 
 /** Usuáios */
 $route->get('/users', 'Dashboard\User@show');
@@ -22,6 +23,7 @@ $route->get('/products', 'Dashboard\Product@show');
 $route->get('/product/create', 'Dashboard\Product@create');
 $route->post('/product/create', 'Dashboard\Product@insert');
 $route->post('/product/list', 'Dashboard\Product@list');
+$route->post('/product/listbyid', 'Dashboard\Product@list_by_id');
 $route->get('/product/edit/{id}', 'Dashboard\Product@edit');
 $route->post('/product/update/{id}', 'Dashboard\Product@update');
 $route->post('/product/delete/{id}', 'Dashboard\Product@delete');
